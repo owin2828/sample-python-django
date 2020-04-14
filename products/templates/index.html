@@ -1,0 +1,6 @@
+<h1>Products</h1>
+<ul>
+    {% for product in products %}
+        <li> {{ product.id }} {{ product.name }} (${{product.price}}) {{ product.stock }} {{ product.image_url }} </li>
+    {% endfor %}
+</ul>

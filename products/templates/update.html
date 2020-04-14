@@ -1,0 +1,14 @@
+<h1>Update</h1>
+<form action="update" method="post">
+    {% csrf_token %}
+    <label for="name">name</label>
+    <input type="hidden" name="id" id="id" value="{{ product.id }}">
+    <input type="text" name="name" id="name" value="{{ product.name }}">
+    <label for="price">price</label>
+    <input type="text" name="price" id="price" value="{{ product.price }}">
+    <label for="stock">stock</label>
+    <input type="stock" name="stock" id="stock" value="{{ product.stock }}">
+    <label for="img_url">url</label>
+    <input type="text" name="img_url" id="img_url" value="{{ product.image_url }}">
+    <button type="submit">save</button>
+</form>

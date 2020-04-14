@@ -1,0 +1,13 @@
+<h1>New</h1>
+<form action="insert" method="post">
+    {% csrf_token %}
+    <label for="name">name</label>
+    <input type="text" name="name" id="name">
+    <label for="price">price</label>
+    <input type="text" name="price" id="price">
+    <label for="stock">stock</label>
+    <input type="stock" name="stock" id="stock">
+    <label for="img_url">url</label>
+    <input type="text" name="img_url" id="img_url">
+    <button type="submit">save</button>
+</form>
